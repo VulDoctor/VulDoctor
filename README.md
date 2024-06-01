@@ -25,7 +25,7 @@ This repository is the replication package of **"Combining Static Purified Seman
   
 * If you meet OutOfMemoryError: please note that you typically need around 30 GB GPU memory to run VulDoctor.
 
-* Other baselines could see [VulRepair]()
+* Other baselines could see [VRepair](https://github.com/ASSERT-KTH/VRepair), [VulRepair](https://github.com/awsm-research/VulRepair), [VulMaster](https://github.com/soarsmu/VulMaster_), and [VQM](https://github.com/awsm-research/VQM)
 
 ## Install dependencies
 
