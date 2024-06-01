@@ -29,8 +29,8 @@ This repository is the replication package of **"Combining Static Purified Seman
 
  Please install them first.
 ```
-conda create -n vulmaster python=3.8 
-conda activate vulmaster
+conda create -n VulDoctor python=3.8 
+conda activate VulDoctor
 pip install -r requirements.txt
 ```
 
