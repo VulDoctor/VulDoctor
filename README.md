@@ -6,24 +6,26 @@ This repository is the replication package of **"Combining Static Purified Seman
 
 * In the replication, we provide:
   * the scripts we used to:
-    * `0a_train.sh`: fine-tune the models with validation.
-    * `0b_test.sh`:  perform inference using the fine-tuned models.
+    * `train.sh`: fine-tune the models with validation.
+    * `test.sh`:  perform inference using the fine-tuned models.
   * the source code we used to:
     * `VulDoctor.py`: the main code for training/validating.
     * `infere.py`: the main code for testing.
-    * `src/`: the utils, model, data preprocessing, etc. for FiD.
-  * the CWE knowledge we collected from CWE website:
-    * `CWE_examples_GPT35_generate_fixes_full.csv`: the raw vulnerable code examples and their analysis and CWE names directly collected from CWE homepages.
-    * `chatgpt_api_generate_fix.py`: the main code for generating fixes for vulnerable code examples with expert analysis as guidance.
-    * `ChatGPT_generated_fixes_labels.xlsx`: the manually labeled correctness for generated fixes for vulnerable code examples.
+    * `datasets/`: training dataset, testing dataset and valid dataset.
+  * dynamic execution trace generation module `DynamicExecutionGeneration/`:
+    * `generation.py`: generation the dynamic execution traces.
+  * purification module `purification/`:
+    * `slice.py`: get the program slice.
 
- We stored the datasets you need in order to replicate our experiments at: https://zenodo.org/records/10150013 and [Here](https://drive.google.com/drive/folders/1L5fkJ_J-NvuWlcr-GbfomorxoS6HwuTs?usp=sharing) is CodeT5 model after adaptation. 
+ We use [CodeT5-base](https://drive.google.com/drive/folders/1L5fkJ_J-NvuWlcr-GbfomorxoS6HwuTs?usp=sharing) as our backbone model. 
  
 * `requirements.txt` contains the dependencies needed.
 
-* The experiments were conducted on a server equipped with NVIDIA L40 GPU and Intel(R) Xeon(R) CPU E5-2420 v2@ 2.20GHz, running the Ubuntu OS.
+* The experiments were conducted on a server equipped with NVIDIA 3090Ti GPU and Intel Core i7-12700KF, running the Windows.
   
-* If you meet OutOfMemoryError: please note that you typically need around 30 GB GPU memory to run VulMaster.
+* If you meet OutOfMemoryError: please note that you typically need around 30 GB GPU memory to run VulDoctor.
+
+* Other baselines could see [VulRepair]()
 
 ## Install dependencies
 
