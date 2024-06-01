@@ -14,6 +14,7 @@ This repository is the replication package of **"Combining Static Purified Seman
     * `datasets/`: training dataset, testing dataset and valid dataset.
   * dynamic execution trace generation module `DynamicExecutionGeneration/`:
     * `generation.py`: generation the dynamic execution traces.
+    * `generation_model\`: trained model.
   * purification module `purification/`:
     * `slice.py`: get the program slice.
 
