@@ -8,23 +8,25 @@ This repository is the replication package of **"Combining Static Purified Seman
   * the scripts we used to:
     * `train.sh`: fine-tune the models with validation.
     * `test.sh`:  perform inference using the fine-tuned models.
-  * the source code we used to:
+  * The source code we used to:
     * `VulDoctor.py`: the main code for training/validating/testing.
-    * `datasets/`: training dataset, testing dataset and valid dataset.
+    * `datasets/`: training dataset, testing dataset, and valid dataset.
   * dynamic execution trace generation module `DynamicExecutionGeneration/`:
-    * `generation.py`: generation the dynamic execution traces.
+    * `generation.py`: generation of the dynamic execution traces.
     * `fine_tuned_model_epoch10\`: trained model.
   * purification module `purification/`:
     * `slice.py`: get the program slice.
 
  We use [CodeT5-base](https://drive.google.com/drive/folders/1L5fkJ_J-NvuWlcr-GbfomorxoS6HwuTs?usp=sharing) as our backbone model. Please download the CodeT5-base under the root dir of this replication package. 
  
- In order to replicate the dynamic execution trace generation module, please download the fine_tuned_model for dynamicExecutionGeneration [Here](https://drive.google.com/file/d/1DrkpVKB75a_XK8sjzfl2INhaN_9cCWTJ/view?usp=drive_link) or fine-tune by yourself using the Code [Here](https://github.com/aashishyadavally/nd-slicer)
+ In order to replicate the dynamic execution trace generation module, please download the fine_tuned_model for dynamicExecutionGeneration [Here](https://drive.google.com/file/d/1DrkpVKB75a_XK8sjzfl2INhaN_9cCWTJ/view?usp=drive_link) or fine-tune by yourself using the Code [Here](https://github.com/aashishyadavally/nd-slicer). It is worth noted that the dynamicExecutionGeneration module needs to install a new requirements.txt.
+
+ 
 * `requirements.txt` contains the dependencies needed.
 
 * The experiments were conducted on a server equipped with NVIDIA 3090Ti GPU and Intel Core i7-12700KF, running the Windows.
   
-* If you meet OutOfMemoryError: please note that you typically need around 30 GB GPU memory to run VulDoctor.
+* If you encounter OutOfMemoryError, please note that you typically need around 30 GB of GPU memory to run VulDoctor.
 
 * Other baselines could see [VRepair](https://github.com/ASSERT-KTH/VRepair), [VulRepair](https://github.com/awsm-research/VulRepair), [VulMaster](https://github.com/soarsmu/VulMaster_), and [VQM](https://github.com/awsm-research/VQM)
 
