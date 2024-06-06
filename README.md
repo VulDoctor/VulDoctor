@@ -14,12 +14,12 @@ This repository is the replication package of **"Combining Static Purified Seman
     * `datasets/`: training dataset, testing dataset and valid dataset.
   * dynamic execution trace generation module `DynamicExecutionGeneration/`:
     * `generation.py`: generation the dynamic execution traces.
-    * `generation_model\`: trained model.
+    * `fine_tuned_model_epoch10\`: trained model.
   * purification module `purification/`:
     * `slice.py`: get the program slice.
 
  We use [CodeT5-base](https://drive.google.com/drive/folders/1L5fkJ_J-NvuWlcr-GbfomorxoS6HwuTs?usp=sharing) as our backbone model. 
- 
+ Please download the fine_tuned_model for dynamicExecutionGeneration [Here](https://drive.google.com/file/d/1DrkpVKB75a_XK8sjzfl2INhaN_9cCWTJ/view?usp=drive_link) or fine-tune by yourself using the Code [Here](https://github.com/aashishyadavally/nd-slicer)
 * `requirements.txt` contains the dependencies needed.
 
 * The experiments were conducted on a server equipped with NVIDIA 3090Ti GPU and Intel Core i7-12700KF, running the Windows.
