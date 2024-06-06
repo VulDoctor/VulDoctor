@@ -9,8 +9,7 @@ This repository is the replication package of **"Combining Static Purified Seman
     * `train.sh`: fine-tune the models with validation.
     * `test.sh`:  perform inference using the fine-tuned models.
   * the source code we used to:
-    * `VulDoctor.py`: the main code for training/validating.
-    * `infere.py`: the main code for testing.
+    * `VulDoctor.py`: the main code for training/validating/testing.
     * `datasets/`: training dataset, testing dataset and valid dataset.
   * dynamic execution trace generation module `DynamicExecutionGeneration/`:
     * `generation.py`: generation the dynamic execution traces.
