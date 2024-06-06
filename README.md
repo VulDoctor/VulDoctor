@@ -41,9 +41,9 @@ pip install -r requirements.txt
 
 ## Train and Test 
 
-To replicate VulMaster, ensure that `c_dataset/` is in the root path of this project. 
+To replicate VulMaster, ensure that `datasets/` is in the root path of this project. 
 
-Training:
+Inference:
 ```
 python VulDoctor.py \
     --output_dir=./saved_models \
@@ -57,7 +57,7 @@ python VulDoctor.py \
     --eval_batch_size 1
 ```
 
-Testing:
+Training:
 ```
 python VulDoctor.py \
     --model_name=model.bin \
